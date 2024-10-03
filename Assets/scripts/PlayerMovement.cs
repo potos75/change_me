@@ -6,7 +6,11 @@ using UnityEngine.UIElements;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rigB;
+
     public int PlayerSpeed;
+
+    public int PlayerSpeed = 2;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
