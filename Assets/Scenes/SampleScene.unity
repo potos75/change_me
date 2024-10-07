@@ -217,7 +217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (11)
+      value: inventoryslot (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -324,7 +324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (6)
+      value: inventoryslot (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -556,7 +556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (14)
+      value: inventoryslot(14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -658,13 +658,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (3)
+      value: inventoryslot (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
+--- !u!1 &141576844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
+  m_PrefabInstance: {fileID: 7021159721325226229}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &146359318 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 331317870047513342, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
@@ -765,7 +770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image
+      value: inventoryslot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -867,7 +872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (6)
+      value: inventoryslot (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -964,7 +969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (5)
+      value: inventoryslot (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1061,7 +1066,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (1)
+      value: inventoryslot (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1243,7 +1248,7 @@ GameObject:
   - component: {fileID: 476890141}
   - component: {fileID: 476890144}
   - component: {fileID: 476890143}
-  - component: {fileID: 476890142}
+  - component: {fileID: 476890145}
   m_Layer: 5
   m_Name: inventoryitem
   m_TagString: Untagged
@@ -1265,23 +1270,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1579820012}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &476890142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476890140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 144636453dcd21d44b09db241231ff14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &476890143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1302,7 +1295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: aea530adaf5d36449963b1699a695045, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1320,6 +1313,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476890140}
   m_CullTransparentMesh: 1
+--- !u!114 &476890145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476890140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8460e7917a92fc148b06e8b173fe37d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &491472579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1410,7 +1415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (5)
+      value: inventoryslot (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1507,7 +1512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (27)
+      value: inventoryslot (27)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1696,7 +1701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (21)
+      value: inventoryslot (21)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1842,7 +1847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (20)
+      value: inventoryslot (20)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1939,7 +1944,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (9)
+      value: inventoryslot (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2041,7 +2046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (17)
+      value: inventoryslot(17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2138,7 +2143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (3)
+      value: inventoryslot (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2235,7 +2240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (22)
+      value: inventoryslot (22)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2337,7 +2342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (26)
+      value: inventoryslot (26)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2434,7 +2439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (12)
+      value: inventoryslot (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2536,7 +2541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (19)
+      value: inventoryslot(19)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2638,7 +2643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image
+      value: inventoryslot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2740,7 +2745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (25)
+      value: inventoryslot (25)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2852,7 +2857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (23)
+      value: inventoryslot (23)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2949,7 +2954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (4)
+      value: inventoryslot (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3046,7 +3051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (16)
+      value: inventoryslot (16)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3278,7 +3283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (1)
+      value: inventoryslot (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3380,7 +3385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (10)
+      value: inventoryslot (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3566,7 +3571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (2)
+      value: inventoryslot (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3772,7 +3777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image
+      value: inventoryslot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3869,7 +3874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (24)
+      value: inventoryslot (24)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4021,7 +4026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image
+      value: inventoryslot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4033,6 +4038,18 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 331317870047513342, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
   m_PrefabInstance: {fileID: 7021159721325226229}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1579820016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141576844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4c979de11eeeb4b88835f2c9523cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1650495328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4123,7 +4140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (18)
+      value: inventoryslot(18)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4196,7 +4213,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ae297123f091bbf4e8f1835eb98fb293, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1c856a67ba3477842ba5c768a51a1cb4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4216,8 +4233,8 @@ Transform:
   m_GameObject: {fileID: 1683185262}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalPosition: {x: 0.4, y: 5.2, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 519420032}
@@ -4275,7 +4292,7 @@ Animator:
   m_GameObject: {fileID: 1683185262}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3c2a5b7097b0fe44394328c0bdb9252e, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4376,7 +4393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (7)
+      value: inventoryslot(7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4473,7 +4490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (13)
+      value: inventoryslot (13)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4729,7 +4746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (15)
+      value: inventoryslot (15)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4904,7 +4921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (8)
+      value: inventoryslot (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5001,7 +5018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (7)
+      value: inventoryslot (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5103,7 +5120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (2)
+      value: inventoryslot(2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5200,7 +5217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image
+      value: inventoryslot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5297,7 +5314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image (4)
+      value: inventoryslot(4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5404,7 +5421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       propertyPath: m_Name
-      value: Image
+      value: inventoryslot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5412,7 +5429,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 331317870047513342, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 476890141}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2190464057437687920, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1579820016}
   m_SourcePrefab: {fileID: 100100000, guid: 6609d7b9edc0b414eb3c6baf546f397e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
