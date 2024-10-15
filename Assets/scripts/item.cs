@@ -25,10 +25,12 @@ public class Item : ScriptableObject
         BuldingBlock,
         tool
     }
+    //clasa do okreœlania rodzaju przedmiotu
 
     public enum ActionType
     {
         Dig,
         Mine
     }
+    //klasa do okreœlania rodzaju czynnoœci
 }
