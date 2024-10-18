@@ -21,17 +21,27 @@ public class dragingitem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     {
         item = newitem;
         image.sprite = newitem.image;
+        RefreshCount();
     }
     //funkcja do przypisywania gotowego itemu do itemu 
 
+    public void RefreshCount()
+    {
+        countText.text = Count.ToString();
+        bool textactive = Count > 1;
+        countText.gameObject.SetActive(textactive);
+    }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        parentafterdrag = transform.parent;
-        //zapisujemy pocz¹tkowego rodzica
-        transform.SetParent(transform.root);
-        transform.SetAsLastSibling();
-        //dawanie obiektu na najwy¿ej w hierarchi (zmienianie layer)
-        image.raycastTarget = false;
+        if (Input.GetKeyDown(KeyCode.Mouse1) == false)
+        {
+            parentafterdrag = transform.parent;
+            //zapisujemy pocz¹tkowego rodzica
+            transform.SetParent(transform.root);
+            transform.SetAsLastSibling();
+            //dawanie obiektu na najwy¿ej w hierarchi (zmienianie layer)
+            image.raycastTarget = false;
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
