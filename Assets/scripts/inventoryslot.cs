@@ -10,7 +10,8 @@ public class inventoryslot : MonoBehaviour, IDropHandler
     public Color selectedcolor, notselectedcolor;
     //Idrophandler - funkcja do upuszczania na ten obiekt
 
-    public void Awake()
+
+    private void Awake()
     {
         diselect();
     }

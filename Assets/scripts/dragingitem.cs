@@ -32,16 +32,14 @@ public class dragingitem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         countText.gameObject.SetActive(textactive);
     }
     public void OnBeginDrag(PointerEventData eventData)
-    {
-        if (Input.GetKeyDown(KeyCode.Mouse1) == false)
-        {
+    { 
             parentafterdrag = transform.parent;
             //zapisujemy pocz¹tkowego rodzica
             transform.SetParent(transform.root);
             transform.SetAsLastSibling();
             //dawanie obiektu na najwy¿ej w hierarchi (zmienianie layer)
             image.raycastTarget = false;
-        }
+        countText.gameObject.SetActive(false);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -55,5 +53,7 @@ public class dragingitem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         transform.SetParent(parentafterdrag);
         //ustawiamy pocz¹tkowego rodzica 
         image.raycastTarget = true;
+        bool textactive = Count > 1;
+        countText.gameObject.SetActive(textactive);
     }
 }

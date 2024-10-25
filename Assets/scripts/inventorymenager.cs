@@ -11,7 +11,37 @@ public class inventorymenager : MonoBehaviour
     public GameObject inventoryitemprefab;
     //tablica na ka¿dy obiekt slot
 
+    int selectedSlot = -1;
+    private void Start()
+    {
+        ChangeSelectedSlot(0);
+    }
+    
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            int changeslot = selectedSlot + 1;
+            ChangeSelectedSlot(changeslot);
 
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            int changeslot2 = selectedSlot - 1;
+            ChangeSelectedSlot(changeslot2);
+        }
+    }
+
+    void ChangeSelectedSlot(int newValue)
+    {
+        if(selectedSlot >= 0)
+        {
+            Inventoryslots[selectedSlot].diselect();
+        }
+        Inventoryslots[newValue].Select();
+        selectedSlot = newValue;
+
+    }
     public bool AddItem(Item item)
     {
         //find if any slot has the same item with count lower than max
@@ -49,5 +79,29 @@ public class inventorymenager : MonoBehaviour
         dragingitem inventoryitem = newItemGo.GetComponent<dragingitem>();
         //przypisanie skryptu do nowego obiektu
         inventoryitem.initiaslizeitem(item);
+    }
+
+    public Item Getselecteditem(bool use)
+    {
+        inventoryslot slot = Inventoryslots[selectedSlot];
+        dragingitem itemInSlot = slot.GetComponentInChildren<dragingitem>();
+        if(itemInSlot != null)
+        {
+            Item item = itemInSlot.item;
+            if(use == true)
+            {
+                itemInSlot.Count--;
+                if(itemInSlot.Count <= 0)
+                {
+                    Destroy(itemInSlot.gameObject);
+                }
+                else
+                {
+                    itemInSlot.RefreshCount();
+                }
+            }
+            return item;
+        }
+        return null;
     }
 }
